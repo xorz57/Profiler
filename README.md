@@ -1,2 +1,2 @@
 # Profiler
-Profiler written in C++ 11
+Profiler written in C++11
