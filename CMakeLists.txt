@@ -3,4 +3,4 @@ project(Profiler)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Profiler main.cpp)
+add_executable(Profiler src/Main.cpp)
