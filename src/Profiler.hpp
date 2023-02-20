@@ -1,7 +1,7 @@
 #pragma once
 
+#include <chrono>
 #include <cstdio>
-#include <thread>
 
 class Profiler {
 public:

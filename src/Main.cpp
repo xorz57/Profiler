@@ -1,5 +1,7 @@
 #include "Profiler.hpp"
 
+#include <thread>
+
 void f0();
 
 void f1();
