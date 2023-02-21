@@ -9,7 +9,6 @@ public:
 
     explicit Profiler(const char *name) : mName(name) {
         mT0 = std::chrono::high_resolution_clock::now();
-        std::printf("Entered %s\n", mName);
     }
 
     Profiler(const Profiler &) = delete;
@@ -19,7 +18,7 @@ public:
     ~Profiler() {
         mT1 = std::chrono::high_resolution_clock::now();
         mDuration = std::chrono::duration_cast<std::chrono::microseconds>(mT1 - mT0).count();
-        std::printf("Left %s after %llu us\n", mName, mDuration);
+        std::printf("%s took %llu us\n", mName, mDuration);
     }
 
     Profiler &operator=(const Profiler &) = delete;
